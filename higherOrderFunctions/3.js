@@ -13,4 +13,4 @@ function map(array, callback) {
 
 }
 
-console.log(map([1, 2, 3] ));
+console.log(map([1, 2, 3], addTwo));
