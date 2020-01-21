@@ -18,10 +18,10 @@ function loadData() {
 
   xhr.onload = function(){	
     console.log('READYSTATE', xhr.readyState);	
-    if(this.status === 200) {	
+    if(this.status === 200 ) {	
       // console.log(this.responseText);	
       document.getElementById('output').innerHTML = `<h3>${this.responseText}</h3>`;	
-    }	
+    }	 
   }
 
 
