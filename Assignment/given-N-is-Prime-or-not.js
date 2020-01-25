@@ -2,12 +2,11 @@
 
 
 function prime(n) {
- for (var i=0; i < n; i++) {
-   if (n % i ==0) {
-     return 'its prime'
-   } else {
-     return 'its not prime'
-   }
- } 
-
-} prime(11) 
+  for (var i=2; i < n; i++) {
+    if (n % i ==0) {
+      return 'its not prime'
+    }
+  } 
+ return 'its prime'
+ }
+ prime(11)
