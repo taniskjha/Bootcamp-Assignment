@@ -14,5 +14,43 @@ var​ ascii = {
    
          j   :   ​106​ ,    k   :   ​107​ ,    l   :   ​108​ ,    m   :   ​109​ ,    n   :   ​110​ ,    o   :   ​111​ ,    p   :   ​112​ ,    q   :   ​113​ ,    r   :   ​114​ ,    s   :   ​115​ ,    t   :   ​116​ ,    u   :   ​117​ ,    v   :   ​118​ ,    w   :   ​119​ ,    x   :   ​120​ ,    y   :   ​121​ ,    z   :   ​122​ ,​' '​ :   ​32​  ,​':'​ :   ​58​  ,​';'​ :   ​59​  ,​'<'​ :   ​60​  ,​'='​ :   ​61​  ,​'>'​ :   ​62​  ,​'?'​ :   ​63​  ,​'@'​ :   ​64​  ,​'/'​ :   ​47​  ,​'0'​ :   ​48​  ,​'1'​ :   ​49​  ,​'2'​ :   ​50​  ,​'3'​ :   ​51​  ,​'4'​ :   ​52​  ,​'5'​ :   ​53​  ,​'6'​ :   ​54​  ,​'7'​ :   ​55​  ,​'8'​ :   ​56​  ,​'9'​ :   ​57}
 
+        
+         // Step 1- traverse the string 
 
-         
+         // Step 2- convert every character to their charcode
+
+         // Step 3- convert the charcode to binary
+
+         // Step 4- push it into an array and add the left 0s
+
+         // Step 5- return a string separated by space
+
+         var ascii = {
+          A: 65,
+          B: 66,
+          C: 67,
+          D: 68,
+
+        }        
+
+
+
+function foo(binaryToString) {
+let bi = [];
+
+binaryToString.split('').forEach(function(element) {
+  k = '';
+  for (const prop in ascii) {
+    if (prop == element) {
+      var x = ascii[prop];
+      break;
+    }
+  }
+  bi.push(binaryToString.padStart(8, '0'));
+});
+
+
+
+}        
+
+foo('ABCD')
