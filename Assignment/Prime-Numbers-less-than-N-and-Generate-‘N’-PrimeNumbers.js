@@ -1,14 +1,17 @@
+// Write a program to generate Prime-Numbers-less-than-N-and-Generate-‘N’-PrimeNumbers/in-given-range
 
-function prime(n) {
-  for (var i=0; i < n.length; i++) {
-    if (n % i !== 0) {
-      return i + 'its prime'
-    } else {
-      return 'its not prime'
+// find all the prime number below n
+  
+
+  for (var i=2; i < 100; i++) {
+    if (100 % i !== 0) {
+      console.log(i + 'its prime')
     }
   } 
+
  
- } prime(25) 
+
+ 
 
 
 
