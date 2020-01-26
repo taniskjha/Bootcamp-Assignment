@@ -2,6 +2,6 @@
 
 function findArea(radius) {
 
-    return 2 * Math.PI * radius
+    return Math.PI * Math.pow(radius, 2) 
     
-} findArea(50)
+} findArea(50);
