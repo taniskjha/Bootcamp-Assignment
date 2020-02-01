@@ -1,12 +1,9 @@
 // Regular expressions are patterns used to match character combinations in strings
 
 let re;
-
 re = /hello/; 
 
-
 //.................Evaluation-Of-Function.................//
-
 
 // exec() - It returns the result in array if that is a match or else it returns null
 
